@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/trackingInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_tracking"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+    <Switch
+        android:id="@+id/switchHandledButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trackingInformation"
+        android:text="Zeit aufgeschrieben:"
+        android:textOn="Ja"
+        android:textOff="Nein"
+        android:onClick="switchHandled" 
+		android:layout_marginBottom="10dp"
+		android:layout_marginTop="10dp"/>
+    
+    <view class="ch.zuegersolutions.easytimer.TimespanComponent"
+		android:id="@+id/timespanComponent"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/switchHandledButton"
+		android:layout_marginBottom="10dp"
+		android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/stopTrackingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/stopTracking"
+        android:layout_below="@+id/timespanComponent"
+        android:onClick="stopTracking" />
+
+    <Button
+        android:id="@+id/changeTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timespanComponent"
+        android:layout_centerHorizontal="true"
+        android:onClick="changeTime"
+        android:text="@string/save" />
+
+    
+    <TextView
+        android:id="@+id/explanationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="" />
+
+
+</RelativeLayout>

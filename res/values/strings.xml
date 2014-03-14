@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EasyTimer</string>
+    <string name="action_main">Main</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="clear_db">Clear DB</string>
+    <string name="write_tag">Write NFC Tag</string>
+    <string name="read_tag">Read NFC Tag</string>
+    <string name="overview_title">Übersicht</string>
+    <string name="stopTracking">Stop Tracking</string>
+    <string name="no_tracking">Momentan nichts am Tracken.</string>
+    <string name="save">Speichern</string>
+
+</resources>

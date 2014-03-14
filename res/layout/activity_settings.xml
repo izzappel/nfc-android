@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    
+    <EditText
+        android:id="@+id/nfcTagColorEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+    
+   	<Button
+        android:id="@+id/writeTagButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nfcTagColorEditText"
+        android:text="@string/write_tag"
+        android:onClick="writeTag" />
+    
+    <Button
+        android:id="@+id/readTagButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/writeTagButton"
+        android:text="@string/read_tag"
+        android:onClick="readTag" />
+
+    <Button
+        android:id="@+id/cleanDbButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/readTagButton"
+        android:text="@string/clear_db"
+        android:onClick="clearDb" />
+    
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cleanDbButton"
+        android:text="" />
+
+</RelativeLayout>
